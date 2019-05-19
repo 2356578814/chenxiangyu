@@ -7,27 +7,33 @@
         <link rel="stylesheet" href="./css/index.css"/>
         <title>CJY</title>
         <style>
-            .a{
-                height:500px;
-            }
-            .box{
-                width:300px;
-                height:calc(100% - 200px);
-                background-color:red;
-                transition:width .9s;
-            }
-            .box:hover{
+            #box{
                 width:1000px;
+                height:1000px;
             }
-
+            #box ul li{
+                list-style-type: none
+            }
+            #box ul li img{
+                width:150px;
+                height:150px;
+                float:left;
+                margin-left:20px;
+            }
         </style>
         <body>
             <script src="./js/index.js"></script>
             <script src="./js/index1.js"></script>
             <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" async ></script>
-            <div class="a">
-                <div class="box"></div>
-                <span type="primary">测试</span>
+            <div id="box">
+                <ul>
+                    <li><img src="./img/1.jpg"/></li>
+                    <li><img src="./img/2.jpg"/></li>
+                    <li><img src="./img/3.jpg"/></li>
+                    <li><img src="./img/4.jpg"/></li>
+                    <li><img src="./img/5.jpg"/></li>
+                    <li><img src="./img/6.jpg"/></li>
+                </ul>
             </div>
             <script>
                 

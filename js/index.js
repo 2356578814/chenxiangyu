@@ -1,2 +1,1 @@
- var a = 5
- export default a
+alert("欢迎查看陈翔宇帅照")
