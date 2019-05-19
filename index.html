@@ -7,20 +7,49 @@
         <link rel="stylesheet" href="./css/index.css"/>
         <title>CJY</title>
         <style>
+            .a{
+                height:500px;
+            }
+            .box{
+                width:300px;
+                height:calc(100% - 200px);
+                background-color:red;
+                transition:width .9s;
+            }
+            .box:hover{
+                width:1000px;
+            }
+
         </style>
         <body>
             <script src="./js/index.js"></script>
+            <script src="./js/index1.js"></script>
             <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" async ></script>
-        <div class="box">
-            <div class="one">你好</div>
-            <div id=2></div>
-        </div>
+            <div class="a">
+                <div class="box"></div>
+                <span type="primary">测试</span>
+            </div>
             <script>
-                var arr = [1,10,[9,15,3,[7,2],[55,99]],100]
-                var obj = new Array(arr.toString()).split(",")
-                console.log(obj)
+                
+                async function fn(num){
+                    return new Promise((resolve,reject)=>{
+                        if(num>5){
+                            resolve("正确")
+                        }else{
+                            reject("错误")
+                        }
+                    })
+                }
 
-                alert("dev分支")
+                var body = document.getElementsByTagName("body")[0]
+
+                body.onresize = function(){
+                    console.log(1)
+                }
+                
+                
+
+               
             </script>
         </body>
     </head>

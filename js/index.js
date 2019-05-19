@@ -1,1 +1,2 @@
-alert(11)
+ var a = 5
+ export default a
